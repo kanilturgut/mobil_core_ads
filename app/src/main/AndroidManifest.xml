@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    package="com.kanilturgut.mobilecoreaddprovider"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest package="com.kanilturgut.mobilecoreaddprovider"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- to fetch ads from network -->
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -9,7 +8,7 @@
     <!-- to check if device has internet connection -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
-    <!-- keeps screen on while the user is watching a video ad-->
+    <!-- keeps screen on while the user is watching a video ad -->
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
@@ -27,19 +26,39 @@
             </intent-filter>
         </activity>
 
-
         <service
             android:name="com.ironsource.mobilcore.MobileCoreReport"
             android:enabled="true"
             android:exported="false"/>
+
         <receiver
             android:name="com.ironsource.mobilcore.InstallationTracker"
             android:enabled="true"/>
+
         <activity
             android:name="com.ironsource.mobilcore.InterstitialVideoActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:keepScreenOn="true"/>
-
+        <activity
+            android:name=".ads.InterstitialActivity"
+            android:label="@string/title_activity_interstitial"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ads.StickeezActivity"
+            android:label="@string/title_activity_stickeez"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ads.NativeActivity"
+            android:label="@string/title_activity_native"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ads.DirectToMarketActivity"
+            android:label="@string/title_activity_direct_to_market"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
