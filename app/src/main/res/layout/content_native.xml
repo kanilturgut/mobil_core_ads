@@ -13,4 +13,10 @@
     tools:context="com.kanilturgut.mobilecoreaddprovider.ads.NativeActivity"
     tools:showIn="@layout/activity_native">
 
+
+    <ListView
+        android:id="@+id/myNativeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 </RelativeLayout>
