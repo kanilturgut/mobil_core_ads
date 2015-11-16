@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MobileCoreAddProvider.iml" filepath="$PROJECT_DIR$/MobileCoreAddProvider.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobil_core_ads.iml" filepath="$PROJECT_DIR$/mobil_core_ads.iml" />
     </modules>
   </component>
 </project>
+
