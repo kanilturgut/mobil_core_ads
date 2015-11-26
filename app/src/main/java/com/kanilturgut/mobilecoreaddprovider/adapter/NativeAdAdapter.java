@@ -42,7 +42,7 @@ public class NativeAdAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View row = inflater.inflate(R.layout.custom_add_layout, parent, false);
+        View row = inflater.inflate(R.layout.custom_row_item, parent, false);
 
         TextView title, detail;
 

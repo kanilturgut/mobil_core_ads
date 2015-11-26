@@ -46,8 +46,6 @@ public class NativeActivity extends AppCompatActivity {
 
 
         /*
-            !!!!! WTF !!!!!
-
             COMPLIANCE NOTE
 
             Native Ads must include the advertising app’s icon, its name and the Google Play badge
@@ -66,17 +64,17 @@ public class NativeActivity extends AppCompatActivity {
                         event_type == AdUnitEventListener.EVENT_TYPE.AD_UNIT_READY) {
                     for (MobileCore.AD_UNIT_TRIGGER myTrigger : ad_unit_triggers) {
                         if (myTrigger.equals(MobileCore.AD_UNIT_TRIGGER.APP_START)) {
-                            // Build mobileCore native ads adapter and
-                            // attach it to your listview or gridview
 
                             MobileCore.setNativeAdsBannerSupport(true);
 
                             NativeAdsAdapter nativeAdsAdapter = MobileCore.buildNativeAdsAdapter(
                                     NativeActivity.this,
                                     nativeAdAdapter,
-                                    R.layout.custom_add_layout
+                                    R.layout.custom_add_layout,
+                                    MobileCore.AD_UNIT_TRIGGER.APP_START
                             );
 
+                            nativeAdsAdapter.setAdsPositions(4, 11);
                             myNativeList.setAdapter(nativeAdsAdapter);
                         }
                     }

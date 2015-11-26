@@ -15,12 +15,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:adjustViewBounds="true"
+            android:src="@drawable/abc_ic_clear_mtrl_alpha"
             android:scaleType="fitCenter"/>
 
         <ImageView
             android:id="@+id/mc_nativeAd_complianceBadgeIV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_search_api_mtrl_alpha"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:padding="2dp"/>
@@ -35,6 +37,7 @@
 
         <ImageView
             android:id="@+id/mc_nativeAd_iconIV"
+            android:src="@drawable/abc_ic_go_search_api_mtrl_alpha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -54,12 +57,14 @@
                     android:layout_marginLeft="6dp"
                     android:ellipsize="end"
                     android:singleLine="true"
+                    android:text="mc_nativeAd_mainTV"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/mc_nativeAd_descriptionTV"
                     android:layout_width="wrap_content"
+                    android:text="mc_nativeAd_descriptionTV"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
                     android:ellipsize="end"
