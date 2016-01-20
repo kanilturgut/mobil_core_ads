@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="vertical"
-              android:padding="10dp">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:adjustViewBounds="true"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
 
         <ImageView
             android:id="@+id/mc_nativeAd_complianceBadgeIV"
@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:padding="2dp"/>
+            android:padding="2dp" />
     </RelativeLayout>
 
     <LinearLayout
@@ -36,7 +36,7 @@
         <ImageView
             android:id="@+id/mc_nativeAd_iconIV"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                     android:ellipsize="end"
                     android:singleLine="true"
                     android:textSize="16sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/mc_nativeAd_descriptionTV"
@@ -64,17 +64,7 @@
                     android:layout_marginLeft="6dp"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:textSize="14sp"/>
-                <!--
-                <TextView
-                    android:id="@+id/mc_nativeAd_complianceTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="6dp"
-                    android:ellipsize="end"
-                    android:singleLine="true"
                     android:textSize="14sp" />
-                -->
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
